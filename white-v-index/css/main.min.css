@@ -297,3 +297,10 @@ ul.style-dots li{
         padding-left: 2.344vw;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .article-descr, li {
+        font-size: 3.348vw;
+        margin-bottom: 2.623vw;
+    }
+}
