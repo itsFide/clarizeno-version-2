@@ -332,7 +332,6 @@ ul.style-dots li{
 .sales-block-container {
     font-family: 'Open Sans', sans-serif;
     max-width: 800px; /* Ширина статьи */
-    margin: 40px auto;
     background-color: #ffffff;
     /* border: 2px solid #f3f4f6; */
     border-radius: 12px;
