@@ -178,7 +178,20 @@
 
 .hero__right{
     right: -7%;
-    top:-44%;
+    top:0;
+    transform: translate(0);
+    height: 100%;
+}
+.hero__right img{
+    object-fit: cover;
+    border-radius: 100px 0 0 100px;
+    object-position: top;
+}
+.article-img img{
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+
 }
 .hero__left {
     width: 51%;
@@ -208,6 +221,11 @@ ul{
     ul{
         padding-left: 1.302vw;
     }
+    .hero__right img{
+        object-fit: cover;
+        border-radius: 5.208vw 0 0 5.208vw;
+ 
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -227,6 +245,11 @@ ul{
     ul{
         padding-left: 1.344vw;
     }
+    .hero__right{
+        height: 37.109vw;
+        top: unset;
+    }
+
 }
 @media screen and (max-width:650px) {
     ol, ul, ul.style-dots{
@@ -301,4 +324,308 @@ ul.style-dots li{
 }
 .masters .pinoy__title span::before{
     width: 104%;
+}
+
+
+/* Основные стили блока */
+.sales-block-container {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px; /* Ширина статьи */
+    margin: 40px auto;
+    background-color: #ffffff;
+    /* border: 2px solid #f3f4f6; */
+    border-radius: 12px;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.08); */
+    overflow: hidden;
+    color: #333;
+}
+
+/* Заголовок блока */
+.sales-header {
+    background-color: #222; /* Темный верх для контраста */
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.sales-header .title{
+    position: relative;
+    z-index: 1;
+    color:#fff;
+}
+
+
+
+/* Внутренние отступы */
+.sales-body {
+    /* padding: 30px; */
+}
+
+/* Текстовые стили */
+
+
+/* Цитата / Вступление */
+.transparency-note {
+    border-left: 4px solid #f5a623;
+    padding-left: 15px;
+    font-style: italic;
+    margin-bottom: 25px;
+    background: #fffbf0;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Секция шагов (Steps) */
+.step-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.step-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-tag {
+    color: #f5a623;
+    font-weight: bold;
+}
+
+/* Список преимуществ */
+
+
+
+/* Блок Jollibee */
+.jollibee-box {
+    background-color: #fff5f5; /* Легкий красноватый оттенок для ассоциации с едой/брендом */
+    border: 1px dashed #f87171;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.jollibee-title {
+    color: #dc2626;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Секция оплаты */
+.payment-section {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.payment-label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Кнопки */
+.pay-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 140px;
+    color: white;
+    font-family: 'Bebas Book', sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Цвета кнопок */
+.btn-gcash {
+    background: linear-gradient(135deg, #007dfe 0%, #0056b3 100%);
+}
+.btn-maya {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%); /* Maya/PayMaya стиль (черный/зеленый) или брендовый */
+    /* Если нужен зеленый Maya, поменяйте на: #4cc26d */
+}
+.btn-card {
+    background: linear-gradient(135deg, #f5a623 0%, #d48806 100%);
+}
+.buttons-wrapper{
+    margin-top:15px;
+}
+.pay-btn{
+    font-size:26px;
+}
+.first-sale-text{
+    margin-top:30px;
+}
+@media screen and (max-width:1919px) {
+   
+
+
+
+    /* Цитата / Вступление */
+    .transparency-note {
+        border-left: 0.208vw solid #f5a623;
+        padding-left: 0.781vw;
+        margin-bottom: 1.302vw;
+        padding: 0.781vw;
+        border-radius: 0 0.417vw 0.417vw 0;
+    }
+
+    /* Секция шагов (Steps) */
+    .step-card {
+        border: 0.052vw solid #e5e7eb;
+        border-radius: 0.417vw;
+        padding: 1.042vw;
+        margin-bottom: 1.042vw;
+    }
+
+    .step-title {
+        font-size: 1.042vw;
+        margin-bottom: 0.521vw;
+    }
+
+
+    /* Блок Jollibee */
+    .jollibee-box {
+        border: 0.052vw dashed #f87171;
+        border-radius: 0.417vw;
+        padding: 1.042vw;
+        margin: 1.563vw 0;
+    }
+
+    .jollibee-title {
+        margin-bottom: 0.521vw;
+    }
+
+    /* Секция оплаты */
+    .payment-section {
+        margin-top: 2.083vw;
+        padding-top: 1.042vw;
+        border-top: 0.052vw solid #eee;
+    }
+
+    .payment-label {
+        font-size: 0.938vw;
+        margin-bottom: 1.042vw;
+    }
+
+    .buttons-wrapper {
+        gap: 0.781vw;
+    }
+
+    /* Кнопки */
+    .pay-btn {
+        padding: 0.625vw 1.25vw;
+        border-radius: 2.604vw;
+        min-width: 7.292vw;
+        letter-spacing: 0.052vw;
+    }
+
+    .pay-btn:hover {
+        transform: translateY(-0.104vw);
+        box-shadow: 0 0.26vw 0.781vw rgba(0,0,0,0.2);
+    }
+
+    .buttons-wrapper{
+        margin-top:0.781vw;
+    }
+    .pay-btn{
+        font-size:1.354vw;
+    }
+    .first-sale-text{
+        margin-top:1.563vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    /* Кнопки */
+    .pay-btn {
+        padding: 0.625vw 1.25vw;
+        border-radius: 2.604vw;
+        min-width: 7.292vw;
+        letter-spacing: 0.052vw;
+    }
+
+    .pay-btn:hover {
+        transform: translateY(-0.104vw);
+        box-shadow: 0 0.26vw 0.781vw rgba(0,0,0,0.2);
+    }
+
+    .buttons-wrapper{
+        margin-top:15px;
+    }
+    .pay-btn {
+        padding: 1.563vw 3.125vw;
+        border-radius: 6.51vw;
+        min-width: 18.229vw;
+        letter-spacing: 0.13vw;
+        font-size: 3.646vw;
+    }
+    .first-sale-text{
+        margin-top:1.563vw;
+    }
+}
+/* Мобильная адаптивность */
+@media (max-width: 650px) {
+    .buttons-wrapper {
+        flex-direction: column;
+    }
+    .step-card{
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 2.042vw;
+        margin-bottom: 2.415vw;
+    }
+    .pay-btn {
+        width: 100%;
+        font-size: 5.646vw;
+        margin-bottom: 2.415vw;
+
+    }
+    .sales-header{
+
+    }
+    .sales-header .title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-sale-text{
+        margin-top: 2.563vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .article-descr, li {
+        font-size: 3.348vw;
+        margin-bottom: 2.623vw;
+    }
 }
