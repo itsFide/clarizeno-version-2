@@ -177,14 +177,11 @@
 
 
 .hero__right{
-    right: -7%;
-    top:0;
-    transform: translate(0);
-    height: 100%;
+    top:-44%;
 }
 .hero__right img{
     object-fit: cover;
-    border-radius: 100px 0 0 100px;
+    border-radius: 120px 0 0 120px;
     object-position: top;
 }
 .article-img img{
@@ -194,7 +191,7 @@
 
 }
 .hero__left {
-    width: 51%;
+    width: 44%;
 }
 .hero__title span::before{
     width: 106%;
@@ -223,7 +220,7 @@ ul{
     }
     .hero__right img{
         object-fit: cover;
-        border-radius: 5.208vw 0 0 5.208vw;
+        border-radius: 6.25vw 0 0 6.25vw;
  
     }
 }
@@ -261,6 +258,10 @@ ul{
     }
     .hero__right{
         top:unset;
+    }
+    .hero__right img {
+        object-fit: cover;
+        border-radius: 12.077vw 0 0 12.077vw;
     }
 }
 .pinoy__title span::before{
