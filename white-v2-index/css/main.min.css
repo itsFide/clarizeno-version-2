@@ -304,3 +304,7 @@ ul.style-dots li{
         margin-bottom: 2.623vw;
     }
 }
+
+.btn-gcash {
+    background: linear-gradient(135deg, #007dfe 0%, #0056b3 100%);
+}

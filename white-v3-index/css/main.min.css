@@ -311,3 +311,6 @@ ul.style-dots li{
 .hero__descr strong{
     color: #eeaf2c;
 }
+.btn-gcash {
+    background: linear-gradient(135deg, #007dfe 0%, #0056b3 100%);
+}
